@@ -1,16 +1,30 @@
-﻿streamlit==1.45.1
-google-generativeai
-pinecone-client==2.2.1
-pydantic==2.11.4
-requests
-httpx
-numpy
-pyodbc
+﻿# --- FastAPI backend ---
+fastapi
+uvicorn[standard]
+pydantic
+
+# --- Core utilities ---
+unidecode
+pandas
 python-dotenv
+
+# --- Database ---
+pymysql
+
+# --- Google Gemini + LangChain ---
+google-generativeai
+langchain
+langchain-core
 langchain-community
 langchain-google-genai
-fastapi
-uvicorn
-pymysql
-pandas
-langchain
+
+# --- Pinecone Vector DB ---
+pinecone-client
+langchain-pinecone
+
+# --- Embeddings (HuggingFace) ---
+sentence-transformers
+torch
+
+# --- Streamlit (UI, optional) ---
+streamlit==1.45.1
