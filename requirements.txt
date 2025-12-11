@@ -12,3 +12,5 @@ langchain-google-genai
 fastapi
 uvicorn
 pymysql
+pandas
+langchain
